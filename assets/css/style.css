@@ -1,0 +1,340 @@
+.dark {
+  background-color: #2f221c;
+  transition: 300ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0 10rem;
+  background: #fff1eb;
+  transition: 500ms ease-in;
+  background-color: #fff1eb;
+  margin-bottom: 10rem;
+}
+
+.header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo-sushi {
+  height: 6rem;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.header .logo-sushi a {
+  color: #d56e3f;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.header .menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header .menu a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 0 2rem;
+  font-weight: bolder;
+  color: #2c2420;
+}
+.header .menu a:hover {
+  transition: 500ms ease-in;
+  color: #d56e3f;
+}
+.header .icon-theme {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.header .icon-theme i {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.header .icon-theme i:hover {
+  transition: 500ms ease-in;
+  color: #d56e3f;
+}
+
+.btn-header {
+  background-color: transparent;
+  border: none;
+}
+.btn-header.menu {
+  display: none;
+}
+.btn-header.close {
+  display: none;
+}
+.btn-header.sun {
+  display: none;
+}
+
+.home {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .title-home {
+  flex-basis: 30rem;
+  flex-grow: 1;
+}
+.home .title-home h1 {
+  font-size: 5rem;
+  margin-top: 30%;
+  margin-bottom: 1rem;
+  color: #2f221c;
+}
+.home .title-home p {
+  width: 80%;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  color: #68544b;
+}
+.home .title-home button {
+  padding: 1.5rem 3.5rem;
+  font-weight: bolder;
+  background: #d56e3f;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px #958983;
+  color: #fff1eb;
+}
+.home .title-home button:hover {
+  transform: scale(1.01);
+}
+.home .photo-home {
+  flex-basis: 30rem;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.home .photo-home img {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .photo-about {
+  flex-shrink: 2;
+  height: 100%;
+  flex-basis: 30rem;
+  flex-grow: 2;
+}
+.about .photo-about img {
+  margin-top: 5%;
+  width: 90%;
+}
+.about .text-about {
+  height: 100%;
+  flex-basis: 30rem;
+  flex-grow: 1;
+}
+.about .text-about h5 {
+  font-size: 2rem;
+  margin-top: 30%;
+  margin-bottom: 1.5rem;
+}
+.about .text-about h3 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.about .text-about p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.catalog {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+.catalog h5 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.catalog h3 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.catalog .menu-dishes {
+  background-color: yellowgreen;
+  padding: 7rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.catalog .card-dishes {
+  min-height: 28rem;
+  background-color: palegoldenrod;
+  padding: 1rem;
+  flex-basis: 23rem;
+}
+.catalog .card-dishes .photo-dishes {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+.catalog .card-dishes .photo-dishes img {
+  width: 100%;
+}
+.catalog .card-dishes h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c2420;
+}
+.catalog .card-dishes p {
+  font-size: 1.8rem;
+  color: #68544b;
+}
+.catalog .card-dishes .price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+}
+.catalog .card-dishes .price-box p {
+  font-weight: bolder;
+  color: #d56e3f;
+}
+.catalog .card-dishes .price-box .btn-buy {
+  padding: 5px 7px;
+  border-radius: 50%;
+  border: none;
+  background-color: orangered;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+.catalog .card-dishes .price-box .btn-buy i {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 3rem;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .menuToggle {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.785);
+    backdrop-filter: blur(10px);
+    height: auto;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    height: 100%;
+    padding-top: 6rem;
+  }
+  .header .menuToggle li {
+    padding: 1rem 0;
+  }
+  .header .menuToggle a {
+    color: #fff1eb;
+  }
+  .btn-header {
+    z-index: 10;
+  }
+  .btn-header.close-open {
+    display: block;
+  }
+  .btn-header.menu {
+    display: block;
+  }
+  .btn-header.menu-none {
+    display: none;
+  }
+  .btn-header.dark-none {
+    display: none;
+  }
+  .btn-header.ligth-open {
+    display: block;
+  }
+  .home {
+    text-align: center;
+    height: auto;
+  }
+  .home .title-home {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .home .title-home h1 {
+    font-size: 5rem;
+    margin-top: 10%;
+    margin-bottom: 1rem;
+    color: #2f221c;
+  }
+  .home .title-home p {
+    width: 100%;
+  }
+  .home .photo-home {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 0 2rem;
+  }
+  .about {
+    text-align: center;
+  }
+  .about .photo-about {
+    order: 2;
+    height: 100%;
+    flex-basis: 100%;
+  }
+  .about .photo-about img {
+    width: 60%;
+  }
+  .about .text-about {
+    flex-basis: 100%;
+    order: 1;
+  }
+  .about .text-about h5 {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 580px) {
+  body {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .header li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.176);
+  }
+  .header li:nth-last-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.176);
+  }
+  .header .menuToggle {
+    padding-top: 6rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
