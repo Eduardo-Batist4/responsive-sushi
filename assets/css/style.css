@@ -54,7 +54,7 @@ body {
   color: #2c2420;
 }
 .header .menu a:hover {
-  transition: 500ms ease-in;
+  transition: 300ms ease-in;
   color: #d56e3f;
 }
 .header .icon-theme {
@@ -180,18 +180,41 @@ body {
   margin: 1rem 0;
   font-size: 3rem;
 }
-.catalog .menu-dishes {
-  background-color: yellowgreen;
-  padding: 7rem 0;
+.catalog .btns-filter-catalog {
+  margin-top: 4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
+}
+.catalog .btns-filter-catalog button {
+  flex-basis: 10rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  border-radius: 2rem;
+  background-color: transparent;
+  border: 2px solid #d56e3f;
+  color: #d56e3f;
+  cursor: pointer;
+}
+.catalog .btns-filter-catalog button:hover {
+  transition: 600ms ease-in-out;
+  background-color: #d56e3f;
+  color: #fff1eb;
+}
+.catalog .menu-dishes {
+  padding: 5rem 0;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 23rem);
+  justify-content: center;
 }
 .catalog .card-dishes {
   min-height: 28rem;
-  background-color: palegoldenrod;
+  background-color: #fdf3ef;
   padding: 1rem;
-  flex-basis: 23rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
 }
 .catalog .card-dishes .photo-dishes {
   width: 100%;
@@ -225,13 +248,17 @@ body {
   padding: 5px 7px;
   border-radius: 50%;
   border: none;
-  background-color: orangered;
+  background-color: #d56e3f;
   position: absolute;
   right: 5%;
   cursor: pointer;
 }
+.catalog .card-dishes .price-box .btn-buy:hover {
+  transform: scale(1.04);
+}
 .catalog .card-dishes .price-box .btn-buy i {
   font-size: 1.8rem;
+  color: #fff1eb;
 }
 
 @media (max-width: 768px) {
