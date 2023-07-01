@@ -2,6 +2,7 @@ export const menu = [
     {
         id: 1,
         category: "niguiri",
+        nameDish: "Niguiri",
         img: "assets/img/catalog-sushi-rolls.png",
         description: "Japonese Food",
         price: 30,
@@ -9,6 +10,7 @@ export const menu = [
     {
         id: 2,
         category: "uramaki",
+        nameDish: "Uramaki",
         img: "assets/img/catalog-spring-rols.png",
         description: "Japonese Food",
         price: 40,
@@ -16,6 +18,7 @@ export const menu = [
     {
         id: 3,
         category: "temaki",
+        nameDish: "temaki",
         img: "assets/img/catalog-onigiri.png",
         description: "Japonese Food",
         price: 20,
@@ -23,14 +26,15 @@ export const menu = [
     {
         id: 4,
         category: "uramaki",
+        nameDish: "uramaki",
         img: "assets/img/catalog-spring-rols.png",
         description: "Japonese Food",
-        category: 'uramaki',
         price: 310,
     },
     {
         id: 5,
         category: "temaki",
+        nameDish: "temaki",
         img: "assets/img/catalog-onigiri.png",
         description: "Japonese Food",
         price: 420,
@@ -38,6 +42,7 @@ export const menu = [
     {
         id: 6,
         category: "niguiri",
+        nameDish: "niguiri",
         img: "assets/img/catalog-sushi-rolls.png",
         description: "Japonese Food",
         price: 230,
@@ -45,6 +50,7 @@ export const menu = [
     {
         id: 7,
         category: "uramaki",
+        nameDish: "uramaki",
         img: "assets/img/catalog-spring-rols.png",
         description: "Japonese Food",
         price: 40,
@@ -52,6 +58,7 @@ export const menu = [
     {
         id: 8,
         category: "temaki",
+        nameDish: "temaki",
         img: "assets/img/catalog-onigiri.png",
         description: "Japonese Food",
         price: 20,

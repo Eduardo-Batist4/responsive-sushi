@@ -18,7 +18,6 @@ body{
     background: $body-color;
     transition: 500ms ease-in;
     background-color: $body-color;
-    margin-bottom: 10rem;
 }
 
 // ===== Header =====
@@ -38,6 +37,7 @@ body{
             font-weight: bolder;
             text-decoration: none;
             padding: 0 1rem;
+            font-family: $font-title;    
         }
     }
     .menu{
@@ -54,6 +54,7 @@ body{
             margin: 0 2rem;
             font-weight: bolder;
             color: $title-color;
+            font-family: $font-title;    
         }
     }
     .icon-theme{
@@ -73,7 +74,6 @@ body{
 }
 
 // ===== Icons-theme =====
-
 .btn-header{
     background-color: transparent;
     border: none;
@@ -89,7 +89,6 @@ body{
 }
 
 // ===== Home =====
-
 .home{
     width: 100%;
     height: calc(100vh - 6rem);
@@ -103,12 +102,14 @@ body{
             margin-top: 30%;
             margin-bottom: 1rem;
             color: $body-dark;
+            font-family: $font-title;
         }
         p{
             width: 80%;
             margin-bottom: 3rem;    
             font-size: $size-p;
             color: $text-color;
+            font-family: $font-text;
         }
         button{
             padding: 1.5rem 3.5rem;
@@ -119,6 +120,7 @@ body{
             border-radius: 2rem;
             box-shadow: 0 0 10px $text-color-light;
             color: $body-color;
+            font-family: $font-text;    
             &:hover{
                 transform: scale(1.01);
             }
@@ -137,7 +139,6 @@ body{
 }
 
 // ===== About =====
-
 .about{
     width: 100%;
     min-height: 80vh;
@@ -161,20 +162,24 @@ body{
             font-size: $size-h5;
             margin-top: 30%;
             margin-bottom: 1.5rem;
+            font-family: $font-subtitle;
+            color: $orange;
         }
         h3{
             font-size: $size-h3;
             margin-bottom: 2rem;
+            font-family: $font-title;
+            color: $body-dark;
         }
         p{
             font-size: $size-h5;
             line-height: 3rem;
+            font-family: $font-text;
         }
     }
 }
 
 // ===== Catalog =====
-
 .catalog{
     width: 100%;
     min-height: 100vh;
@@ -182,10 +187,13 @@ body{
     h5{
         font-size: $size-h5;
         margin-top: 2rem;
+        color: $orange;
+        font-family: $font-subtitle;
     }
     h3{
         margin: 1rem 0;
         font-size: $size-h3;
+        font-family: $font-text;
     }
 
     // ===== BUTTONS FILTER =====
@@ -203,6 +211,7 @@ body{
             background-color: transparent;
             border: 2px solid $orange;
             color: $orange;
+            font-family: $font-title;
             cursor: pointer;
             &:hover{
                 transition: 600ms ease-in-out;
@@ -238,10 +247,12 @@ body{
             font-size: $size-h5;
             font-weight: bold;
             color: $title-color;
+            font-family: $font-title;
         }
         p{
             font-size: $size-p;
             color: $text-color;
+            font-family: $font-text;
         }
         .price-box{
             display: flex;
@@ -252,6 +263,7 @@ body{
             p{
                 font-weight: bolder;
                 color: $orange;
+                font-family: $font-text;    
             }
             .btn-buy{
                 padding: 5px 7px;
@@ -273,27 +285,253 @@ body{
     }
 }
 
+// ===== Review =====
+.review{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    padding: 4rem 0;
+    h3{
+        font-size: $size-h3;
+        margin-bottom: 2rem;
+        color: $orange;
+        font-family: $font-subtitle;
+    }
 
 
+    .container-slider{
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .container-review{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50rem;
+            height: 100%;
+        }
+    }
+    .review-item{
+        background-color: $body-color;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
+        border-radius: 2rem;
+        min-height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .photo-user{
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            top: -5rem;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .stars-review{
+            margin-top: 12%;
+            padding: 1rem 0 ;
+            i{
+                padding: 0 5px;
+                font-size: 1.6rem;
+                color: $orange;
+            }
+        }
+        h5{
+            font-size: $size-h5;
+            margin: 5px 0;
+            text-transform: uppercase;
+            color: $title-color;
+            font-family: $font-title;
+        }
+        span{
+            font-weight: bolder;
+            font-size: $size-p;
+            margin-bottom: 5px;
+            color: $text-color-light;
+            font-family: $font-text;    
+        }
+        p{
+            font-size: $size-p;
+            width: 90%;
+            color: $text-color;
+            font-family: $font-text;    
+        }
+    }
 
+    // buttons slider
+    #prev-button{
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: $body-dark;
+        &:hover{
+            transition: 300ms;
+            transform: translateX(-3px);
+        }
+        i{
+            font-size: $size-h5;
+        }
+    }
+    #next-button{
+        padding: 1rem;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: $body-dark;
+        &:hover{
+            transition: 300ms;
+            transform: translateX(3px);
+        }
+        i{
+            font-size: $size-h5;
+        }
+    }
+}
 
+// ===== Email =====
+.email{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    .email-container{
+        background-color: $body-dark;
+        width: 70%;
+        min-height: 70%;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        h5{
+            font-size: $size-h5;
+            color: $orange;
+            font-family: $font-subtitle;    
+        }
+        h3{
+            width: 70%;
+            font-size: $size-h3;
+            padding: 1rem 0;
+            color: $body-color;
+            font-family: $font-title;    
+        }
+        .input-email{
+            padding: 1.5rem;
+            width: 60%;
+            border: none;
+            outline: none;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+        }
+        .button-email{
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            background-color: $orange;
+            font-size: $size-p;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;   
+            color: $body-color;
+            font-family: $font-text;    
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ===== Footer =====
+.footer{
+    width: 100%;
+    height: auto;
+    .footer-container{
+        width: 100%;
+        min-height: 20rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .box-footer{
+            flex-basis: 20rem;
+            height: 100%;
+            h5{
+                font-size: $size-h5;
+                margin-bottom: 2rem;
+                font-weight: bold;
+                color: $title-color;
+                font-family: $font-title;
+            }
+            p{
+                font-size: $size-p;
+                color: $text-color;
+                font-family: $font-text;    
+            }
+            &.information{
+                li{
+                    padding: 5px 0;
+                    a{
+                        font-size: $size-p;
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 400ms ease-in-out;
+                        font-family: $font-text;    
+                        &:hover{
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            &.address{
+                p{
+                    padding: 2px 0;
+                }
+            }
+            .media-social{
+                padding: 1rem 0;
+                a{
+                    font-size: $size-h5;
+                    margin-right: 2rem;
+                    color: $orange;
+                    text-decoration: none;
+                    transition: 400ms ease-in-out;
+                    &:hover{
+                        color: $title-color;
+                    }
+                }
+            }
+        }
+    }
+    .copy-card{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: $size-p;
+            color: $text-color;
+        }
+        .card{
+            i{
+                font-size: $size-h5;
+                margin-left: 1rem;
+                color: $body-dark;
+            }
+        }
+    }
+}
 
 
 
@@ -349,6 +587,7 @@ body{
     .home{
         text-align: center;
         height: auto;
+        row-gap: 3rem;
         .title-home{
             flex-grow: 1;
             flex-basis: 100%;
@@ -387,12 +626,93 @@ body{
             }
         }
     }
+    // ---- Review -----
+    .review{
+        height: auto;
+        .container-slider{
+            .container-review{
+                width: 100%;
+            }
+        }
+        .review-item{
+            height: 100%;
+            justify-content: center;
+            .photo-user{
+                top: 2rem;
+            }
+            .stars-review{
+                margin-top: 8%;
+            }
+        }
+    }
+    // ---- Email -----
+    .email{
+        min-height: 50vh;
+        .email-container{
+            padding: 3rem 0;
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            h5{
+                margin-top: 0;
+            }
+            .input-email{
+                width: 80%;
+            }
+            .button-email{
+                width: 20rem;
+            }
+        }
+    }
 
+    .footer{
+        width: 100%;
+        min-height: 50vh;
+        .footer-container{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            .box-footer{
+                flex-basis: 20rem;
+                height: 100%;
+                h5{
+                    font-size: $size-h5;
+                    margin-bottom: 2rem;
+                    font-weight: bold;
+                    color: $title-color;
+                }
+                p{
+                    font-size: $size-p;
+                    color: $text-color;
+                }
+            }
+        }
+    }
 
 }
+
 @media (max-width: 580px){
     body{
         padding: 0 1rem;
+    }
+    .review{
+        .review-item{
+            p{
+                font-size: $size-medium-p;
+            }
+        }
+    }
+    .email{
+        .email-container{
+            h5{
+                font-size: $size-medium-h5;  
+            }
+            h3{
+                font-size: $size-medium-h3; 
+            }
+        }
     }
 }
 

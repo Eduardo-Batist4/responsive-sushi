@@ -1,4 +1,117 @@
 .dark{
-    background-color: $body-dark;
+    background-color: $dark-theme;
     transition: 300ms ease;
 }
+
+// ===== Header =====
+.dark .header{
+    .logo-sushi{
+        a{
+            color: $body-color;
+        }
+    }
+    .menu{
+        a{
+            color: $body-color;
+        }
+    }
+    .icon-theme{
+        i{
+            color: $body-color;
+        }
+    }
+}
+
+// ===== Home =====
+.dark .home{
+    .title-home{
+        h1{
+            color: $body-color;
+        }
+        p{
+            color: $text-color-light;
+        }
+        button{
+            box-shadow: 0 0 10px $dark-theme;
+        }
+    }
+}
+
+// ===== About =====
+.about{
+    .text-about{
+        h3{
+            color: $body-color;
+        }
+        p{
+            color: $text-color-light;
+        }
+    }
+}
+
+// ===== Catalog =====
+.dark .catalog{
+    h3{
+        color: $body-color;
+    }
+    .card-dishes{
+        background-color: $dark-theme;
+        h5{
+            color: $body-color;
+        }
+        p{
+            color: $text-color-light;
+        }
+    }
+}
+
+// ===== Review =====
+.dark .review{
+    // buttons slider
+    #prev-button{
+        color: $body-color;
+    }
+    #next-button{
+        color: $body-color;
+    }
+}
+
+// ===== Email =====
+.dark .email{
+    .email-container{
+        background-color: $dark-theme;
+    }
+}
+
+// ===== Footer =====
+.dark .footer{
+    .footer-container{
+        .box-footer{
+            h5{
+                color: $body-color;
+            }
+            p{
+                color: $text-color-light;
+            }
+            &.information{
+                li{
+                    a{
+                        color: $text-color-light;
+                    }
+                }
+            }
+        }
+    }
+    .copy-card{
+        p{
+            color: $text-color-light;
+        }
+        .card{
+            i{
+                color: $text-color-light;
+            }
+        }
+    }
+}
+
+

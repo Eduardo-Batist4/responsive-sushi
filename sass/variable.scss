@@ -6,9 +6,24 @@ $text-color: #68544b;
 $text-color-light: #958983;
 $body-color: #fff1eb;
 $body-dark: #2f221c;
+$dark-theme: #0a0c10;
 
 // ===== Font-size =====
 $size-h1: 5rem;
 $size-h3: 3rem;
 $size-h5: 2rem;
 $size-p: 1.8rem;
+
+$size-medium-h1: 4.7rem;
+$size-medium-h3: 2.7rem;
+$size-medium-h5: 1.8rem;
+$size-medium-p: 1.6rem;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+$font-subtitle: 'Dancing Script', cursive;
+$font-title: 'Poppins', sans-serif;
+$font-text: 'Lora', serif;
+

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- link css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sushi</title>
@@ -72,7 +74,7 @@
         </article>
     </section>
 
-    <!-- About -->
+    <!-- Catalog -->
     <section class="catalog">
         <h5>Catalog</h5>
         <h3>Popular Dishes</h3>
@@ -99,8 +101,107 @@
         </article>
     </section>
 
+    <!-- Review -->
+    <section class="review">
+        <h3>Review</h3>
+        <article class="container-slider">
+            <button id="prev-button">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="container-review">
+                <div class="review-item">
+                    <div class="photo-user">
+                        <img src="assets/img/review1.png" alt="" id="photo-user">
+                    </div>
+                    <div class="stars-review">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h5 id="person">vanessa lofent</h5>
+                    <span id="user">@vanesaaass</span>
+                    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente asperiores inventore error commodi.</p>
+                </div>
+            </div>
+            <button id="next-button">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </article>
+
+    </section>
+
+    <!-- Email -->
+    <section class="email">
+        <article class="email-container">
+            <h5>Email</h5>
+            <h3>Inscrever-se para Atualização de Ofertas!</h3>
+            <input type="text" class="input-email" placeholder="Enter email">
+            <button class="button-email">Enviar</button>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="box-footer sushi">
+                <h5>Sushi</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, earum perferendis officia architecto delectus sapiente.</p>
+            </div>
+            <div class="box-footer information">
+                <h5>Information</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#">Ordem & Devoluções</a>
+                        </li>
+                        <li>
+                            <a href="#">Videos</a>
+                        </li>
+                        <li>
+                            <a href="#">Reserva</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box-footer address">
+                <h5>Address</h5>
+                <p>Av.Holindas 1234</p>
+                <p>Lima 4321, Brasil</p>
+                <p>9AM - 11PM</p>
+            </div>
+            <div class="box-footer social">
+                <h5>Social Media</h5>
+                <div class="media-social">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-card">
+            <p>&copy; Copyright EduardoOreia. </p>
+            <div class="card">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+            </div>
+        </div>
+    </footer>
 
     <!-- script js -->
     <script type="module" src="assets/js/index.js"></script>
+    <!-- script swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
