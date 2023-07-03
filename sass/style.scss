@@ -14,10 +14,11 @@ html{
 
 // ===== Body =====
 body{
-    padding: 0 10rem;
+    // padding: 0 10rem;
     background: $body-color;
     transition: 500ms ease-in;
     background-color: $body-color;
+    position: absolute;
 }
 
 // ===== Header =====
@@ -26,6 +27,11 @@ body{
     height: 6rem;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    padding: 0 10rem;
+    z-index: 1;
+    background-color: $body-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.181);
     .logo-sushi{
         height: 6rem;
         display: flex;
@@ -94,6 +100,7 @@ body{
     height: calc(100vh - 6rem);
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10rem;
     .title-home{
         flex-basis: 30rem;
         flex-grow: 1;
@@ -144,6 +151,7 @@ body{
     min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10rem;
     .photo-about{
         flex-shrink: 2;
         height: 100%;
@@ -184,6 +192,7 @@ body{
     width: 100%;
     min-height: 100vh;
     text-align: center;
+    padding: 0 10rem;
     h5{
         font-size: $size-h5;
         margin-top: 2rem;
@@ -290,7 +299,7 @@ body{
     width: 100%;
     height: 80vh;
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 10rem;
     h3{
         font-size: $size-h3;
         margin-bottom: 2rem;
@@ -406,6 +415,7 @@ body{
     align-items: center;
     text-align: center;
     margin-bottom: 5rem;
+    padding: 0 10rem;
     .email-container{
         background-color: $body-dark;
         width: 70%;
@@ -455,6 +465,7 @@ body{
 .footer{
     width: 100%;
     height: auto;
+    padding: 0 10rem;
     .footer-container{
         width: 100%;
         min-height: 20rem;
@@ -533,15 +544,26 @@ body{
     }
 }
 
+// ===== Scroll Bar =====
+::-webkit-scrollbar{
+    width: 1.3rem;
+    border-radius: 5rem;
+    background-color: #c4bdba;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5rem;
+    background-color: #ada39f;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #958883;
+}
 
 
 // =============== Medium Device ===============
 
 @media (max-width: 768px){
-    body{
-        padding: 0 3rem;
-    }
     .header{
+        padding: 0 3rem;
         .menu{
             display: none;
         }
@@ -556,7 +578,7 @@ body{
             position: absolute;
             width: 30%;
             right: 0;
-            height: 100%;
+            height: 100vh;
             padding-top: 6rem;
             a{
                 color: $body-color;
@@ -588,6 +610,8 @@ body{
         text-align: center;
         height: auto;
         row-gap: 3rem;
+        padding: 0 3rem;
+        margin-top: 3rem;
         .title-home{
             flex-grow: 1;
             flex-basis: 100%;
@@ -610,6 +634,7 @@ body{
     // ---- About -----
     .about{
         text-align: center;
+        padding: 0 3rem;
         .photo-about{
             order: 2;            
             height: 100%;
@@ -626,8 +651,13 @@ body{
             }
         }
     }
+    // ---- Catalog -----
+    .catalog{
+        padding: 0 3rem;
+    }
     // ---- Review -----
     .review{
+        padding: 0 3rem;
         height: auto;
         .container-slider{
             .container-review{
@@ -647,6 +677,7 @@ body{
     }
     // ---- Email -----
     .email{
+        padding: 3rem;
         min-height: 50vh;
         .email-container{
             padding: 3rem 0;
@@ -668,6 +699,7 @@ body{
     .footer{
         width: 100%;
         min-height: 50vh;
+        padding: 0 3rem;
         .footer-container{
             width: 100%;
             height: 90%;
@@ -694,7 +726,25 @@ body{
 }
 
 @media (max-width: 580px){
-    body{
+    .header{
+        padding: 0 1rem;
+    }
+    .home{
+        padding: 0 1rem;
+    }
+    .about{
+        padding: 0 1rem;
+    }
+    .catalog{
+        padding: 0 1rem;
+    }
+    .review{
+        padding: 0 1rem;
+    }
+    .email{
+        padding: 0 1rem;
+    }
+    .footer{
         padding: 0 1rem;
     }
     .review{

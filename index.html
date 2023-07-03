@@ -21,16 +21,16 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#">Sobre</a>
+                    <a href="#about">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Catalog</a>
+                    <a href="#catalog">Catalogo</a>
                 </li>
                 <li>
-                    <a href="#">Review</a>
+                    <a href="#review">Review</a>
                 </li>
             </ul>
         </nav>
@@ -51,21 +51,21 @@
     </header>
 
     <!-- Home -->
-    <main class="home">
+    <main class="home" id="home">
         <section class="title-home">
             <h1>Enjoy Delicius <br>Sushi Food</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui obcaecati cupiditate aliquid tenetur cumque.</p>
             <button type="button">Buy Now</button>
         </section>
         <section class="photo-home">
-            <img src="/assets/img/home-sushi.png" alt="home-sushi">
+            <img src="assets/img/home-sushi.png" alt="home-sushi" class="imgHome">
         </section>
     </main>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <article class="photo-about">
-            <img src="/assets/img/about-sushi.png" alt="photo-about">
+            <img src="assets/img/about-sushi.png" alt="photo-about" class="about-img">
         </article>
         <article class="text-about">
             <h5>About us</h5>
@@ -75,7 +75,7 @@
     </section>
 
     <!-- Catalog -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <h5>Catalog</h5>
         <h3>Popular Dishes</h3>
         <div class="btns-filter-catalog">
@@ -87,7 +87,7 @@
         <article class="menu-dishes">
             <!-- <div class="card-dishes">
                 <div class="photo-dishes">
-                    <img src="/assets/img/catalog-onigiri.png" alt="">
+                    <img src="assets/img/catalog-onigiri.png" alt="">
                 </div>
                 <h5>Sushi</h5>
                 <p>Japonese Food</p>
@@ -102,7 +102,7 @@
     </section>
 
     <!-- Review -->
-    <section class="review">
+    <section class="review" id="review">
         <h3>Review</h3>
         <article class="container-slider">
             <button id="prev-button">
@@ -201,6 +201,7 @@
 
     <!-- script js -->
     <script type="module" src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- script swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>

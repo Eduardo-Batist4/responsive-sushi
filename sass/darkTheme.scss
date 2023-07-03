@@ -5,6 +5,8 @@
 
 // ===== Header =====
 .dark .header{
+    background-color: $dark-theme;
+    box-shadow: 0 0 10px #d56e3f6f;
     .logo-sushi{
         a{
             color: $body-color;
@@ -38,7 +40,7 @@
 }
 
 // ===== About =====
-.about{
+.dark .about{
     .text-about{
         h3{
             color: $body-color;
