@@ -7,7 +7,7 @@
 - Contem animação ao Rolar a Pagina
 
 
-https://eduardo-oreia.github.io/Portifolio/
+https://eduardo-oreia.github.io/responsive-sushi/
 
 
 ## Screenshots
